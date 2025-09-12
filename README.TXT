@@ -46,3 +46,33 @@ is updated before object is ready to use.
 
 There is no direct updateDisplay() in the second constructor as setTime(hour, minute)
 already calls updateDisplay within it.
+
+#28 print: 
+    p1.print("report.pdf", true);
+    p1.print("notes.txt", false);
+    
+    getStatus:
+    p1.getStatus(5);
+    p1.getStatus(0);
+    
+#29 Square, Triangle and Circle.
+
+#30 changeSize(int, int)
+    moveHorizontal(int)
+    moveVertical(int)
+    makeVisible()
+    
+#31 The picture class does not contain any internal method calls.
+
+#32 The remainder is 2
+
+#33 The result takes the sign of the dividend.
+
+#34 0,1,2,3,4
+
+#35 n can be any int
+    m can be any nonzero integer
+    
+#36 Not sure
+
+#37
