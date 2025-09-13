@@ -73,6 +73,17 @@ already calls updateDisplay within it.
 #35 n can be any int
     m can be any nonzero integer
     
-#36 Not sure
+#36 private void updateDisplay()
+{
+    int rawHour = hours.getValue();
+    int displayHour = rawHour % 12;
+    if (displayHour == 0) {
+        displayHour = 12;
+    }
+    String ampm = (rawHour < 12) ? "am" : "pm";
+    displayString = displayHour + ":" + minutes.getDisplayValue() + ampm;
+}
 
-#37
+#37 Keep hours as 0–23 and converting to 12-hour with AM/PM in updateDisplay()
+is easier and better because the clock remains simple, and the display is the 
+only thing changing.
